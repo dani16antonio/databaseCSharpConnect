@@ -192,7 +192,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(533, 450);
             this.Controls.Add(this.btnRetu);
             this.Controls.Add(this.btnEras);
             this.Controls.Add(this.btnComm);
@@ -211,7 +211,7 @@
             this.Controls.Add(this.tbCod);
             this.Controls.Add(this.label1);
             this.Name = "nuevoMedico";
-            this.Text = "nuevoMedico";
+            this.Text = "nuevo medico";
             this.ResumeLayout(false);
             this.PerformLayout();
 
