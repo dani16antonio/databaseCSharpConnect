@@ -8,3 +8,6 @@ C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\De
 C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\Debug\databaseProject.csproj.CoreCompileInputs.cache
 C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\Debug\databaseProject.exe
 C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\Debug\databaseProject.pdb
+C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\Debug\databaseProject.nuevoMedico.resources
+C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\Debug\databaseProject.nuevoPaciente.resources
+C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\Debug\databaseProject.nuevaEnfermedad.resources

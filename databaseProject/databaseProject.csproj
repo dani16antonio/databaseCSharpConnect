@@ -52,6 +52,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="nuevaEnfermedad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nuevaEnfermedad.Designer.cs">
+      <DependentUpon>nuevaEnfermedad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nuevoMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nuevoMedico.Designer.cs">
+      <DependentUpon>nuevoMedico.cs</DependentUpon>
+    </Compile>
     <Compile Include="nuevoPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +74,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nuevaEnfermedad.resx">
+      <DependentUpon>nuevaEnfermedad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nuevoMedico.resx">
+      <DependentUpon>nuevoMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nuevoPaciente.resx">
+      <DependentUpon>nuevoPaciente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

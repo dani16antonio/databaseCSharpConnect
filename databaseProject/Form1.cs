@@ -58,5 +58,26 @@ namespace databaseProject
         {
             Close();
         }
+
+        private void btnPac_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            nuevoPaciente nuevoPaciente = new nuevoPaciente(this);
+            nuevoPaciente.ShowDialog();
+        }
+
+        private void btnMed_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            nuevoMedico nuevoMedico = new nuevoMedico(this);
+            nuevoMedico.ShowDialog();
+        }
+
+        private void btnEnf_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            nuevaEnfermedad nuevaEnfermedad = new nuevaEnfermedad(this);
+            nuevaEnfermedad.ShowDialog();
+        }
     }
 }
