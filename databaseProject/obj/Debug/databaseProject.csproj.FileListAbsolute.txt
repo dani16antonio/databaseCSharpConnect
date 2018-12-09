@@ -1,0 +1,10 @@
+C:\Users\danie\Documents\database Project\databaseProject\databaseProject\bin\Debug\databaseProject.exe.config
+C:\Users\danie\Documents\database Project\databaseProject\databaseProject\bin\Debug\databaseProject.exe
+C:\Users\danie\Documents\database Project\databaseProject\databaseProject\bin\Debug\databaseProject.pdb
+C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\Debug\databaseProject.csprojAssemblyReference.cache
+C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\Debug\databaseProject.Form1.resources
+C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\Debug\databaseProject.Properties.Resources.resources
+C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\Debug\databaseProject.csproj.GenerateResource.cache
+C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\Debug\databaseProject.csproj.CoreCompileInputs.cache
+C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\Debug\databaseProject.exe
+C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\Debug\databaseProject.pdb
