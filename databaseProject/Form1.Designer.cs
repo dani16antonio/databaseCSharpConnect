@@ -39,12 +39,18 @@
             this.btnMed = new System.Windows.Forms.Button();
             this.btnPac = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.btnRepo = new System.Windows.Forms.Button();
+            this.btnReEn = new System.Windows.Forms.Button();
+            this.btnRePa = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnRePa);
+            this.groupBox2.Controls.Add(this.btnReEn);
+            this.groupBox2.Controls.Add(this.btnRepo);
             this.groupBox2.Controls.Add(this.btnNomApeNumEnf);
             this.groupBox2.Controls.Add(this.btnMedEdad);
             this.groupBox2.Controls.Add(this.btnListEnfXPac);
@@ -52,7 +58,7 @@
             this.groupBox2.Controls.Add(this.btnPacXMed);
             this.groupBox2.Location = new System.Drawing.Point(236, 29);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(151, 199);
+            this.groupBox2.Size = new System.Drawing.Size(260, 199);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Consultas";
@@ -106,6 +112,7 @@
             this.btnPacXMed.TabIndex = 2;
             this.btnPacXMed.Text = "No. Pacientes";
             this.btnPacXMed.UseVisualStyleBackColor = true;
+            this.btnPacXMed.Click += new System.EventHandler(this.btnPacXMed_Click);
             this.btnPacXMed.MouseHover += new System.EventHandler(this.btnPacXMed_MouseHover);
             // 
             // groupBox3
@@ -152,13 +159,46 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(466, 48);
+            this.btnExit.Location = new System.Drawing.Point(502, 48);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 7;
             this.btnExit.Text = "Salir";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnRepo
+            // 
+            this.btnRepo.Location = new System.Drawing.Point(142, 19);
+            this.btnRepo.Name = "btnRepo";
+            this.btnRepo.Size = new System.Drawing.Size(116, 23);
+            this.btnRepo.TabIndex = 7;
+            this.btnRepo.Text = "Reporte medi.";
+            this.btnRepo.UseVisualStyleBackColor = true;
+            this.btnRepo.Click += new System.EventHandler(this.btnRepo_Click);
+            this.btnRepo.MouseHover += new System.EventHandler(this.button1_MouseHover);
+            // 
+            // btnReEn
+            // 
+            this.btnReEn.Location = new System.Drawing.Point(144, 98);
+            this.btnReEn.Name = "btnReEn";
+            this.btnReEn.Size = new System.Drawing.Size(116, 23);
+            this.btnReEn.TabIndex = 8;
+            this.btnReEn.Text = "Reporte enferm.";
+            this.btnReEn.UseVisualStyleBackColor = true;
+            this.btnReEn.Click += new System.EventHandler(this.btnReEn_Click);
+            this.btnReEn.MouseHover += new System.EventHandler(this.btnReEn_MouseHover);
+            // 
+            // btnRePa
+            // 
+            this.btnRePa.Location = new System.Drawing.Point(142, 170);
+            this.btnRePa.Name = "btnRePa";
+            this.btnRePa.Size = new System.Drawing.Size(116, 23);
+            this.btnRePa.TabIndex = 9;
+            this.btnRePa.Text = "Reporte pacient.";
+            this.btnRePa.UseVisualStyleBackColor = true;
+            this.btnRePa.Click += new System.EventHandler(this.btnRePa_Click);
+            this.btnRePa.MouseHover += new System.EventHandler(this.button1_MouseHover_1);
             // 
             // Form1
             // 
@@ -187,6 +227,9 @@
         private System.Windows.Forms.Button btnMed;
         private System.Windows.Forms.Button btnPac;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnRepo;
+        private System.Windows.Forms.Button btnReEn;
+        private System.Windows.Forms.Button btnRePa;
     }
 }
 

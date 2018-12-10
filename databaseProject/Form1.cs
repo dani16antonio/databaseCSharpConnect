@@ -79,5 +79,44 @@ namespace databaseProject
             nuevaEnfermedad nuevaEnfermedad = new nuevaEnfermedad(this);
             nuevaEnfermedad.ShowDialog();
         }
+
+        private void btnPacXMed_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+            ToolTip ToolTip1 = new ToolTip();
+            ToolTip1.SetToolTip(this.btnRepo, "Reporte de información de los médicos.");
+        }
+
+        private void btnReEn_MouseHover(object sender, EventArgs e)
+        {
+            ToolTip ToolTip1 = new ToolTip();
+            ToolTip1.SetToolTip(this.btnReEn, "Reporte de información de los médicos y enfermedades de pacientes que " +
+                "atendió.");
+        }
+
+        private void btnRepo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReEn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_MouseHover_1(object sender, EventArgs e)
+        {
+            ToolTip ToolTip1 = new ToolTip();
+            ToolTip1.SetToolTip(this.btnRePa, "Reporte de información de los pacientes y sus enfermedades.");
+        }
+
+        private void btnRePa_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
