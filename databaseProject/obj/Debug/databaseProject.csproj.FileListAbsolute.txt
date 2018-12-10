@@ -46,3 +46,4 @@ C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\De
 C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\Debug\databaseProject.ReporteEnferm.resources
 C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\Debug\databaseProject.ReporteMedi.resources
 C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\Debug\databaseProject.ReportePacient.resources
+C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\Debug\databaseProject.Login.resources

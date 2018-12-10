@@ -12,9 +12,11 @@ namespace databaseProject
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        Form login;
+        public Form1(Form login)
         {
             InitializeComponent();
+            this.login = login;
         }
 
         private void btnPacXMed_MouseHover(object sender, EventArgs e)
@@ -59,7 +61,8 @@ namespace databaseProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Close();
+            login.Close();
+            this.Close();
         }
 
         private void btnPac_Click(object sender, EventArgs e)

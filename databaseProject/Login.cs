@@ -20,6 +20,7 @@ namespace databaseProject
             sqlConnection = new SqlConnection(@"Data Source=(local);
                                                             Initial Catalog=CITAS_SPACEMONKEYS;
                                                             Integrated Security=true;");
+            tbPass.PasswordChar = '*';
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -31,17 +32,27 @@ namespace databaseProject
             sqlConnection.Open();
             SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
             SqlDataReader dataReader = sqlCommand.ExecuteReader();
-            sqlConnection.Close();
             if (dataReader.Read())
             {
-                new Form1();
-                this.Close();
+                this.Hide();
+                new Form1(this).ShowDialog();
             }
             else
             {
                 MessageBox.Show("Parece que el usuario o la contraseña están incorrectos", "¡Vaya!", MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
             }
+            sqlConnection.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void tbPass_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
