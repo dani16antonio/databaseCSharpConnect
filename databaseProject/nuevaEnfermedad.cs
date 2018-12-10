@@ -75,8 +75,8 @@ namespace databaseProject
             string sistema = tbSyst.Text;
             string descripcion = tbDesc.Text;
 
-            string query = "INSERT INTO Enfermedad(Id_Enfermedad,Nombre, Sistema, Descripcion) " +
-                "values(2,'" + nombre+"','"+sistema+"','"+descripcion+"')";
+            string query = "INSERT INTO Enfermedad(Nombre, Sistema, Descripcion) " +
+                "values('" + nombre+"','"+sistema+"','"+descripcion+"')";
             sqlConnection.Open();
             SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
             sqlCommand.ExecuteNonQuery();
