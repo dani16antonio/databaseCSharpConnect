@@ -51,12 +51,12 @@ namespace databaseProject
         private void comboBoxMItems()
         {
             sqlConnection.Open();
-            string query = "SELECT Apellido FROM dbo.Medico";
+            string query = "SELECT Nombre,Apellido FROM dbo.Medico";
             SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
             SqlDataReader rows = sqlCommand.ExecuteReader();
             while (rows.Read())
             {
-                comboBoxM.Items.Add(rows["Apellido"].ToString());
+                comboBoxM.Items.Add(rows["Nombre"].ToString()+","+rows["Apellido"].ToString());
             }
             sqlConnection.Close();
             comboBoxM.SelectedIndex = 0;
@@ -65,12 +65,12 @@ namespace databaseProject
         private void comboBoxPItems()
         {
             sqlConnection.Open();
-            string query = "SELECT Apellido FROM dbo.Paciente";
+            string query = "SELECT Nombre,Apellido FROM dbo.Paciente";
             SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
             SqlDataReader rows = sqlCommand.ExecuteReader();
             while (rows.Read())
             {
-                comboBoxP.Items.Add(rows["Apellido"].ToString());
+                comboBoxP.Items.Add(rows["Nombre"].ToString() + "," + rows["Apellido"].ToString());
             }
             sqlConnection.Close();
             comboBoxP.SelectedIndex = 0;
@@ -123,18 +123,12 @@ namespace databaseProject
             sqlConnection.Open();
             SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
             sqlCommand.ExecuteNonQuery();
-            MessageBox.Show("Se guardaron los datos correctamente.",
-                "Datos guardados",
-                MessageBoxButtons.OK);
             Limpiar();
             sqlConnection.Close();
 
             sqlConnection.Open();
             SqlCommand sqlCommand1 = new SqlCommand(query1, sqlConnection);
             sqlCommand1.ExecuteNonQuery();
-            MessageBox.Show("Se guardaron los datos correctamente.",
-                "Datos guardados",
-                MessageBoxButtons.OK);
             Limpiar();
             sqlConnection.Close();
 
@@ -189,6 +183,11 @@ namespace databaseProject
         }
 
         private void comboBoxT_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
