@@ -12,3 +12,37 @@ C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\De
 C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\Debug\databaseProject.nuevoPaciente.resources
 C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\Debug\databaseProject.nuevaEnfermedad.resources
 C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\Debug\databaseProject.medico.universidad.resources
+E:\musica\databaseCSharpConnect-master\databaseProject\bin\Debug\databaseProject.exe.config
+E:\musica\databaseCSharpConnect-master\databaseProject\bin\Debug\databaseProject.exe
+E:\musica\databaseCSharpConnect-master\databaseProject\bin\Debug\databaseProject.pdb
+E:\musica\databaseCSharpConnect-master\databaseProject\obj\Debug\databaseProject.csprojAssemblyReference.cache
+E:\musica\databaseCSharpConnect-master\databaseProject\obj\Debug\databaseProject.Form1.resources
+E:\musica\databaseCSharpConnect-master\databaseProject\obj\Debug\databaseProject.medico.universidad.resources
+E:\musica\databaseCSharpConnect-master\databaseProject\obj\Debug\databaseProject.nuevaEnfermedad.resources
+E:\musica\databaseCSharpConnect-master\databaseProject\obj\Debug\databaseProject.nuevoMedico.resources
+E:\musica\databaseCSharpConnect-master\databaseProject\obj\Debug\databaseProject.nuevoPaciente.resources
+E:\musica\databaseCSharpConnect-master\databaseProject\obj\Debug\databaseProject.Properties.Resources.resources
+E:\musica\databaseCSharpConnect-master\databaseProject\obj\Debug\databaseProject.csproj.GenerateResource.cache
+E:\musica\databaseCSharpConnect-master\databaseProject\obj\Debug\databaseProject.csproj.CoreCompileInputs.cache
+E:\musica\databaseCSharpConnect-master\databaseProject\obj\Debug\databaseProject.exe
+E:\musica\databaseCSharpConnect-master\databaseProject\obj\Debug\databaseProject.pdb
+E:\musica\databaseCSharpConnect-master\databaseProject\obj\Debug\databaseProject.NoPacientes.resources
+E:\musica\databaseCSharpConnect-master\databaseProject\obj\Debug\databaseProject.EdadPromedio.resources
+E:\musica\databaseCSharpConnect-master\databaseProject\obj\Debug\databaseProject.ListaDeEnferm.resources
+E:\musica\databaseCSharpConnect-master\databaseProject\obj\Debug\databaseProject.NoMedicoPorEdad.resources
+E:\musica\databaseCSharpConnect-master\databaseProject\obj\Debug\databaseProject.NoEnfermedad.resources
+E:\musica\databaseCSharpConnect-master\databaseProject\obj\Debug\databaseProject.ReporteMedi.resources
+E:\musica\databaseCSharpConnect-master\databaseProject\obj\Debug\databaseProject.ReporteEnferm.resources
+E:\musica\databaseCSharpConnect-master\databaseProject\obj\Debug\databaseProject.NombreDirec.resources
+E:\musica\databaseCSharpConnect-master\databaseProject\obj\Debug\databaseProject.ReportePacient.resources
+E:\musica\databaseCSharpConnect-master\databaseProject\obj\Debug\databaseProject.Citas.resources
+C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\Debug\databaseProject.Citas.resources
+C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\Debug\databaseProject.EdadPromedio.resources
+C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\Debug\databaseProject.ListaDeEnferm.resources
+C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\Debug\databaseProject.NoEnfermedad.resources
+C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\Debug\databaseProject.NombreDirec.resources
+C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\Debug\databaseProject.NoMedicoPorEdad.resources
+C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\Debug\databaseProject.NoPacientes.resources
+C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\Debug\databaseProject.ReporteEnferm.resources
+C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\Debug\databaseProject.ReporteMedi.resources
+C:\Users\danie\Documents\database Project\databaseProject\databaseProject\obj\Debug\databaseProject.ReportePacient.resources

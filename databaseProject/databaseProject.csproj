@@ -47,17 +47,59 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Citas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Citas.Designer.cs">
+      <DependentUpon>Citas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EdadPromedio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EdadPromedio.Designer.cs">
+      <DependentUpon>EdadPromedio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListaDeEnferm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaDeEnferm.Designer.cs">
+      <DependentUpon>ListaDeEnferm.cs</DependentUpon>
+    </Compile>
     <Compile Include="medico\universidad.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="medico\universidad.Designer.cs">
       <DependentUpon>universidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NoEnfermedad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoEnfermedad.Designer.cs">
+      <DependentUpon>NoEnfermedad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NombreDirec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NombreDirec.Designer.cs">
+      <DependentUpon>NombreDirec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NoMedicoPorEdad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoMedicoPorEdad.Designer.cs">
+      <DependentUpon>NoMedicoPorEdad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NoPacientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoPacientes.Designer.cs">
+      <DependentUpon>NoPacientes.cs</DependentUpon>
     </Compile>
     <Compile Include="nuevaEnfermedad.cs">
       <SubType>Form</SubType>
@@ -79,11 +121,50 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReporteEnferm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteEnferm.Designer.cs">
+      <DependentUpon>ReporteEnferm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteMedi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteMedi.Designer.cs">
+      <DependentUpon>ReporteMedi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportePacient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportePacient.Designer.cs">
+      <DependentUpon>ReportePacient.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Citas.resx">
+      <DependentUpon>Citas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EdadPromedio.resx">
+      <DependentUpon>EdadPromedio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ListaDeEnferm.resx">
+      <DependentUpon>ListaDeEnferm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="medico\universidad.resx">
       <DependentUpon>universidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoEnfermedad.resx">
+      <DependentUpon>NoEnfermedad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NombreDirec.resx">
+      <DependentUpon>NombreDirec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoMedicoPorEdad.resx">
+      <DependentUpon>NoMedicoPorEdad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoPacientes.resx">
+      <DependentUpon>NoPacientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="nuevaEnfermedad.resx">
       <DependentUpon>nuevaEnfermedad.cs</DependentUpon>
@@ -103,6 +184,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ReporteEnferm.resx">
+      <DependentUpon>ReporteEnferm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteMedi.resx">
+      <DependentUpon>ReporteMedi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportePacient.resx">
+      <DependentUpon>ReportePacient.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

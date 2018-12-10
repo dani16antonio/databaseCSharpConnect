@@ -70,10 +70,7 @@ namespace databaseProject
             string direccion = tbDire.Text;
             DateTime nacimiento = dtpBorn.Value.Date;
             nacimiento = DateTime.Parse(nacimiento.Year.ToString()+"-"+nacimiento.Month.ToString()+"-"+nacimiento.Day.ToString());
-            string query = "INSERT INTO Medico(Nombre,Apellido,Fecha_Nacimiento,Id_Universidad," +
-                "Direccion,Id_Tipo_Contratacion)" +
-                "values('" + nombre + "','" + apellido + "','" + nacimiento + "'," +
-                "'"+universidad+"','"+direccion+"','"+contrato+"')";
+            string query = "EXEC dbo.usp_Insert_Medico '" + nombre + "','" + apellido + "','" + nacimiento + "'," +universidad+",'"+direccion+"',"+contrato+"";
 
             sqlConnection.Open();
             SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
@@ -121,6 +118,11 @@ namespace databaseProject
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             contrato = (comboBox1.SelectedIndex) + 1;
+        }
+
+        private void nuevoMedico_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void btnUniv_Click(object sender, EventArgs e)

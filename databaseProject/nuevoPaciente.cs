@@ -59,9 +59,7 @@ namespace databaseProject
             string social=this.tbSoci.Text;
             int numero = int.Parse(this.tbNoHi.Text);
             nacimiento = DateTime.Parse(nacimiento.Year.ToString() + "-" + nacimiento.Month.ToString() + "-" + nacimiento.Day.ToString());
-            string query = "INSERT INTO Paciente(Seguro_Social,Nombre,Apellido,Fecha_Nacimiento,Direccion,Numero_Historial)" +
-                "values('" + social + "','" + nombre + "','" + apellido + "'," +
-                "'" + nacimiento + "','" + direccion + "','" + numero + "')";
+            string query = "EXEC dbo.usp_Insert_Paciente " + social + ",'" + nombre + "','" + apellido + "','" + nacimiento + "','" + direccion + "', " + numero + "";
 
             sqlConnection.Open();
             SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);

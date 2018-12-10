@@ -143,6 +143,7 @@
             this.Controls.Add(this.label1);
             this.Name = "nuevaEnfermedad";
             this.Text = "nueva enfermedad";
+            this.Load += new System.EventHandler(this.nuevaEnfermedad_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

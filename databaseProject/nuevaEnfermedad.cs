@@ -75,8 +75,7 @@ namespace databaseProject
             string sistema = tbSyst.Text;
             string descripcion = tbDesc.Text;
 
-            string query = "INSERT INTO Enfermedad(Nombre, Sistema, Descripcion) " +
-                "values('" + nombre+"','"+sistema+"','"+descripcion+"')";
+            string query = "EXEC dbo.usp_Insert_Enfermedad '" + nombre+"','"+sistema+"','"+descripcion+"'";
             sqlConnection.Open();
             SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
             sqlCommand.ExecuteNonQuery();
@@ -89,6 +88,11 @@ namespace databaseProject
             tbSyst.Text = string.Empty;
 
             sqlConnection.Close();
+        }
+
+        private void nuevaEnfermedad_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

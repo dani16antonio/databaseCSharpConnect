@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnRePa = new System.Windows.Forms.Button();
+            this.btnReEn = new System.Windows.Forms.Button();
+            this.btnRepo = new System.Windows.Forms.Button();
             this.btnNomApeNumEnf = new System.Windows.Forms.Button();
             this.btnMedEdad = new System.Windows.Forms.Button();
             this.btnListEnfXPac = new System.Windows.Forms.Button();
@@ -39,15 +42,15 @@
             this.btnMed = new System.Windows.Forms.Button();
             this.btnPac = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.btnRepo = new System.Windows.Forms.Button();
-            this.btnReEn = new System.Windows.Forms.Button();
-            this.btnRePa = new System.Windows.Forms.Button();
+            this.btn_NoDicPa = new System.Windows.Forms.Button();
+            this.btncitas = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btn_NoDicPa);
             this.groupBox2.Controls.Add(this.btnRePa);
             this.groupBox2.Controls.Add(this.btnReEn);
             this.groupBox2.Controls.Add(this.btnRepo);
@@ -58,10 +61,43 @@
             this.groupBox2.Controls.Add(this.btnPacXMed);
             this.groupBox2.Location = new System.Drawing.Point(236, 29);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(260, 199);
+            this.groupBox2.Size = new System.Drawing.Size(268, 199);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Consultas";
+            // 
+            // btnRePa
+            // 
+            this.btnRePa.Location = new System.Drawing.Point(146, 133);
+            this.btnRePa.Name = "btnRePa";
+            this.btnRePa.Size = new System.Drawing.Size(116, 23);
+            this.btnRePa.TabIndex = 9;
+            this.btnRePa.Text = "Reporte pacient.";
+            this.btnRePa.UseVisualStyleBackColor = true;
+            this.btnRePa.Click += new System.EventHandler(this.btnRePa_Click);
+            this.btnRePa.MouseHover += new System.EventHandler(this.button1_MouseHover_1);
+            // 
+            // btnReEn
+            // 
+            this.btnReEn.Location = new System.Drawing.Point(146, 57);
+            this.btnReEn.Name = "btnReEn";
+            this.btnReEn.Size = new System.Drawing.Size(116, 23);
+            this.btnReEn.TabIndex = 8;
+            this.btnReEn.Text = "Reporte enferm.";
+            this.btnReEn.UseVisualStyleBackColor = true;
+            this.btnReEn.Click += new System.EventHandler(this.btnReEn_Click);
+            this.btnReEn.MouseHover += new System.EventHandler(this.btnReEn_MouseHover);
+            // 
+            // btnRepo
+            // 
+            this.btnRepo.Location = new System.Drawing.Point(146, 19);
+            this.btnRepo.Name = "btnRepo";
+            this.btnRepo.Size = new System.Drawing.Size(116, 23);
+            this.btnRepo.TabIndex = 7;
+            this.btnRepo.Text = "Reporte medi.";
+            this.btnRepo.UseVisualStyleBackColor = true;
+            this.btnRepo.Click += new System.EventHandler(this.btnRepo_Click);
+            this.btnRepo.MouseHover += new System.EventHandler(this.button1_MouseHover);
             // 
             // btnNomApeNumEnf
             // 
@@ -71,6 +107,7 @@
             this.btnNomApeNumEnf.TabIndex = 6;
             this.btnNomApeNumEnf.Text = "No. Enfermedades";
             this.btnNomApeNumEnf.UseVisualStyleBackColor = true;
+            this.btnNomApeNumEnf.Click += new System.EventHandler(this.btnNomApeNumEnf_Click);
             this.btnNomApeNumEnf.MouseHover += new System.EventHandler(this.btnNomApeNumEnf_MouseHover);
             // 
             // btnMedEdad
@@ -81,6 +118,7 @@
             this.btnMedEdad.TabIndex = 5;
             this.btnMedEdad.Text = "No. Medico por edad";
             this.btnMedEdad.UseVisualStyleBackColor = true;
+            this.btnMedEdad.Click += new System.EventHandler(this.btnMedEdad_Click);
             this.btnMedEdad.MouseHover += new System.EventHandler(this.btnMedEdad_MouseHover);
             // 
             // btnListEnfXPac
@@ -91,6 +129,7 @@
             this.btnListEnfXPac.TabIndex = 4;
             this.btnListEnfXPac.Text = "Lista de enferm.";
             this.btnListEnfXPac.UseVisualStyleBackColor = true;
+            this.btnListEnfXPac.Click += new System.EventHandler(this.btnListEnfXPac_Click);
             this.btnListEnfXPac.MouseHover += new System.EventHandler(this.btnListEnfXPac_MouseHover);
             // 
             // btnEdadProm
@@ -117,12 +156,13 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.btncitas);
             this.groupBox3.Controls.Add(this.btnEnf);
             this.groupBox3.Controls.Add(this.btnMed);
             this.groupBox3.Controls.Add(this.btnPac);
             this.groupBox3.Location = new System.Drawing.Point(12, 29);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(151, 156);
+            this.groupBox3.Size = new System.Drawing.Size(151, 193);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Nuevo";
@@ -159,7 +199,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(502, 48);
+            this.btnExit.Location = new System.Drawing.Point(510, 48);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 7;
@@ -167,38 +207,25 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btnRepo
+            // btn_NoDicPa
             // 
-            this.btnRepo.Location = new System.Drawing.Point(142, 19);
-            this.btnRepo.Name = "btnRepo";
-            this.btnRepo.Size = new System.Drawing.Size(116, 23);
-            this.btnRepo.TabIndex = 7;
-            this.btnRepo.Text = "Reporte medi.";
-            this.btnRepo.UseVisualStyleBackColor = true;
-            this.btnRepo.Click += new System.EventHandler(this.btnRepo_Click);
-            this.btnRepo.MouseHover += new System.EventHandler(this.button1_MouseHover);
+            this.btn_NoDicPa.Location = new System.Drawing.Point(146, 98);
+            this.btn_NoDicPa.Name = "btn_NoDicPa";
+            this.btn_NoDicPa.Size = new System.Drawing.Size(116, 23);
+            this.btn_NoDicPa.TabIndex = 10;
+            this.btn_NoDicPa.Text = "Nombre Direc Pacien.";
+            this.btn_NoDicPa.UseVisualStyleBackColor = true;
+            this.btn_NoDicPa.Click += new System.EventHandler(this.btn_NoDicPa_Click);
             // 
-            // btnReEn
+            // btncitas
             // 
-            this.btnReEn.Location = new System.Drawing.Point(144, 98);
-            this.btnReEn.Name = "btnReEn";
-            this.btnReEn.Size = new System.Drawing.Size(116, 23);
-            this.btnReEn.TabIndex = 8;
-            this.btnReEn.Text = "Reporte enferm.";
-            this.btnReEn.UseVisualStyleBackColor = true;
-            this.btnReEn.Click += new System.EventHandler(this.btnReEn_Click);
-            this.btnReEn.MouseHover += new System.EventHandler(this.btnReEn_MouseHover);
-            // 
-            // btnRePa
-            // 
-            this.btnRePa.Location = new System.Drawing.Point(142, 170);
-            this.btnRePa.Name = "btnRePa";
-            this.btnRePa.Size = new System.Drawing.Size(116, 23);
-            this.btnRePa.TabIndex = 9;
-            this.btnRePa.Text = "Reporte pacient.";
-            this.btnRePa.UseVisualStyleBackColor = true;
-            this.btnRePa.Click += new System.EventHandler(this.btnRePa_Click);
-            this.btnRePa.MouseHover += new System.EventHandler(this.button1_MouseHover_1);
+            this.btncitas.Location = new System.Drawing.Point(19, 155);
+            this.btncitas.Name = "btncitas";
+            this.btncitas.Size = new System.Drawing.Size(115, 23);
+            this.btncitas.TabIndex = 3;
+            this.btncitas.Text = "Citas";
+            this.btncitas.UseVisualStyleBackColor = true;
+            this.btncitas.Click += new System.EventHandler(this.btncitas_Click);
             // 
             // Form1
             // 
@@ -230,6 +257,8 @@
         private System.Windows.Forms.Button btnRepo;
         private System.Windows.Forms.Button btnReEn;
         private System.Windows.Forms.Button btnRePa;
+        private System.Windows.Forms.Button btn_NoDicPa;
+        private System.Windows.Forms.Button btncitas;
     }
 }
 

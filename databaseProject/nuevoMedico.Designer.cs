@@ -197,6 +197,7 @@
             this.Controls.Add(this.label2);
             this.Name = "nuevoMedico";
             this.Text = "nuevo medico";
+            this.Load += new System.EventHandler(this.nuevoMedico_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
