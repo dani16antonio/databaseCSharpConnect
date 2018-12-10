@@ -14,7 +14,7 @@ namespace databaseProject
     public partial class nuevoMedico : Form
     {
         Form f1;
-        private int contrato = -1, universidad=-1;
+        public static int contrato = 0, universidad=0;
         private SqlConnection sqlConnection;
         public nuevoMedico(Form form1)
         {
@@ -23,16 +23,22 @@ namespace databaseProject
             sqlConnection = new SqlConnection(@"Data Source=(local);
                                                             Initial Catalog=CITAS_SPACEMONKEYS;
                                                             Integrated Security=true;");
+            comboBoxItems();
         }
 
         private void btnEras_Click(object sender, EventArgs e)
         {
-            
+
+            Limpiar();
+        }
+
+        private void Limpiar()
+        {
             this.tbDire.Text = String.Empty;
             this.tbLast.Text = String.Empty;
             this.tbNam.Text = String.Empty;
-            this.contrato = -1;
-            this.universidad = -1;
+            contrato = 0;
+            universidad = 0;
             this.dtpBorn.Value = DateTime.Today;
         }
 
@@ -45,7 +51,7 @@ namespace databaseProject
         private void btnComm_Click(object sender, EventArgs e)
         {
             if (validateBlank(tbDire,tbLast,tbNam) &
-                validateDate(dtpBorn)& validateNumber())
+                validateDate(dtpBorn))
             {
                 makeQuery();
             }
@@ -57,35 +63,25 @@ namespace databaseProject
             }
         }
 
-        private bool validateNumber()
-        {
-            if (this.contrato > 0 & this.universidad > 0)
-                return false;
-            return true;
-        }
-
         private void makeQuery()
         {
-            sqlConnection.Open();
             string nombre = tbNam.Text;
             string apellido = tbLast.Text;
-            //string universidad = tbUniv.Text; //Todo change this field
             string direccion = tbDire.Text;
-            //string contrato = tbContr.Text; // TODO: change this field
-            DateTime nacimiento = dtpBorn.Value; 
-
+            DateTime nacimiento = dtpBorn.Value.Date;
+            nacimiento = DateTime.Parse(nacimiento.Year.ToString()+"-"+nacimiento.Month.ToString()+"-"+nacimiento.Day.ToString());
             string query = "INSERT INTO Medico(Nombre,Apellido,Fecha_Nacimiento,Id_Universidad," +
                 "Direccion,Id_Tipo_Contratacion)" +
-                "values(2,'" + nombre + "','" + apellido + "','" + nacimiento + "'," +
-                "'"+1+"')";
-//todo: mejorar query
+                "values('" + nombre + "','" + apellido + "','" + nacimiento + "'," +
+                "'"+universidad+"','"+direccion+"','"+contrato+"')";
+
             sqlConnection.Open();
             SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
             sqlCommand.ExecuteNonQuery();
             MessageBox.Show("Se guardaron los datos correctamente.",
                 "Datos guardados",
                 MessageBoxButtons.OK);
-
+            Limpiar();
             sqlConnection.Close();
         }
 
@@ -106,6 +102,25 @@ namespace databaseProject
                 }
             }
             return true;
+        }
+
+        private void comboBoxItems()
+        {
+            sqlConnection.Open();
+            string query = "SELECT Tipo_de_Contratacion FROM TipoContratacion";
+            SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
+            SqlDataReader rows = sqlCommand.ExecuteReader();
+            while (rows.Read())
+            {
+                comboBox1.Items.Add(rows["Tipo_de_Contratacion"].ToString());
+            }
+            sqlConnection.Close();
+            comboBox1.SelectedIndex = 0;
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            contrato = (comboBox1.SelectedIndex) + 1;
         }
 
         private void btnUniv_Click(object sender, EventArgs e)

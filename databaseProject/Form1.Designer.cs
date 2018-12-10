@@ -175,7 +175,7 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        //private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnNomApeNumEnf;
         private System.Windows.Forms.Button btnMedEdad;

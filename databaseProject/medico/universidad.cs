@@ -24,6 +24,7 @@ namespace databaseProject.medico
 
         private void updateListBox()
         {
+            lbUniv.Items.Clear();
             sqlConnection = new SqlConnection(@"Data Source=(local);
                                                             Initial Catalog=CITAS_SPACEMONKEYS;
                                                             Integrated Security=true;");
@@ -41,7 +42,20 @@ namespace databaseProject.medico
 
         private void btnUniv_Click(object sender, EventArgs e)
         {
-
+            if (tbUniv.Text.Trim().Equals(string.Empty)){
+                MessageBox.Show("Debe llenar el campo por favor.", "!Vaya¡",MessageBoxButtons.OK);
+            }
+            else
+            {
+                sqlConnection.Open();
+                string query = "INSERT INTO Universidad(Nombre) values('"+tbUniv.Text.Trim()+"')";
+                SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
+                sqlCommand.ExecuteNonQuery();
+                MessageBox.Show("Se registró la nueva universidad.");
+                tbUniv.Text = string.Empty;
+                sqlConnection.Close();
+                updateListBox();
+            }
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -57,7 +71,9 @@ namespace databaseProject.medico
 
         private void lbUniv_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int index =lbUniv.SelectedIndex;
+            nuevoMedico.universidad=(lbUniv.SelectedIndex)+1;
+            this.Close();
+            f1.Show();
         }
     }
 }

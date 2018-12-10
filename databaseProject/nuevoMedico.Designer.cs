@@ -42,7 +42,7 @@
             this.btnEras = new System.Windows.Forms.Button();
             this.btnRetu = new System.Windows.Forms.Button();
             this.btnUniv = new System.Windows.Forms.Button();
-            this.btnCont = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label5
@@ -167,21 +167,20 @@
             this.btnUniv.UseVisualStyleBackColor = true;
             this.btnUniv.Click += new System.EventHandler(this.btnUniv_Click);
             // 
-            // btnCont
+            // comboBox1
             // 
-            this.btnCont.Location = new System.Drawing.Point(143, 204);
-            this.btnCont.Name = "btnCont";
-            this.btnCont.Size = new System.Drawing.Size(75, 23);
-            this.btnCont.TabIndex = 25;
-            this.btnCont.Text = "Seleccionar";
-            this.btnCont.UseVisualStyleBackColor = true;
+            this.comboBox1.Location = new System.Drawing.Point(143, 204);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 0;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // nuevoMedico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(533, 450);
-            this.Controls.Add(this.btnCont);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btnUniv);
             this.Controls.Add(this.btnRetu);
             this.Controls.Add(this.btnEras);
@@ -219,6 +218,6 @@
         private System.Windows.Forms.Button btnEras;
         private System.Windows.Forms.Button btnRetu;
         private System.Windows.Forms.Button btnUniv;
-        private System.Windows.Forms.Button btnCont;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
