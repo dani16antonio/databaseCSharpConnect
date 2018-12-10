@@ -12,9 +12,22 @@ namespace databaseProject
 {
     public partial class Presentacion : Form
     {
-        public Presentacion()
+        Form login;
+        public Presentacion(Form login)
         {
             InitializeComponent();
+            this.login = login;
+        }
+
+        private void Presentacion_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            login.Show();
+            this.Close();
         }
     }
 }
