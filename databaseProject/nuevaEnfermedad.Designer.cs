@@ -79,7 +79,6 @@
             // 
             this.tbSyst.Location = new System.Drawing.Point(115, 69);
             this.tbSyst.Name = "tbSyst";
-            this.tbSyst.PasswordChar = '*';
             this.tbSyst.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbSyst.Size = new System.Drawing.Size(100, 20);
             this.tbSyst.TabIndex = 2;
@@ -134,7 +133,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(443, 450);
+            this.ClientSize = new System.Drawing.Size(443, 217);
             this.Controls.Add(this.btnEars);
             this.Controls.Add(this.btnComm);
             this.Controls.Add(this.btnReturn);

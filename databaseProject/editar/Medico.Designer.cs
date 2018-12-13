@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.btnRetu = new System.Windows.Forms.Button();
-            this.btnEras = new System.Windows.Forms.Button();
             this.btnComm = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cbUniv = new System.Windows.Forms.ComboBox();
@@ -51,23 +50,13 @@
             // 
             // btnRetu
             // 
-            this.btnRetu.Location = new System.Drawing.Point(428, 86);
+            this.btnRetu.Location = new System.Drawing.Point(428, 51);
             this.btnRetu.Name = "btnRetu";
             this.btnRetu.Size = new System.Drawing.Size(75, 23);
             this.btnRetu.TabIndex = 32;
             this.btnRetu.Text = "Regresar";
             this.btnRetu.UseVisualStyleBackColor = true;
             this.btnRetu.Click += new System.EventHandler(this.btnRetu_Click);
-            // 
-            // btnEras
-            // 
-            this.btnEras.Location = new System.Drawing.Point(428, 48);
-            this.btnEras.Name = "btnEras";
-            this.btnEras.Size = new System.Drawing.Size(75, 23);
-            this.btnEras.TabIndex = 31;
-            this.btnEras.Text = "Borrar todo";
-            this.btnEras.UseVisualStyleBackColor = true;
-            this.btnEras.Click += new System.EventHandler(this.btnEras_Click);
             // 
             // btnComm
             // 
@@ -224,7 +213,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnRetu);
-            this.Controls.Add(this.btnEras);
             this.Controls.Add(this.btnComm);
             this.Name = "Medico";
             this.Text = "Medico";
@@ -238,7 +226,6 @@
 
         #endregion
         private System.Windows.Forms.Button btnRetu;
-        private System.Windows.Forms.Button btnEras;
         private System.Windows.Forms.Button btnComm;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox cbCont;
