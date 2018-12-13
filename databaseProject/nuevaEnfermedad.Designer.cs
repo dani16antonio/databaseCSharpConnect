@@ -83,6 +83,7 @@
             this.tbSyst.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbSyst.Size = new System.Drawing.Size(100, 20);
             this.tbSyst.TabIndex = 2;
+            this.tbSyst.TextChanged += new System.EventHandler(this.tbSyst_TextChanged);
             // 
             // label3
             // 

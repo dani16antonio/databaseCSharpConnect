@@ -64,7 +64,6 @@ namespace databaseProject.editar
         private void cbMedi_SelectedIndexChanged(object sender, EventArgs e)
         {
             int contrato=0, universidad=0;
-            string pattern = "yyyy-MM-dd HH:mm:ss";
             string query = "SELECT * FROM Medico WHERE Id_Medico="+
                 (cbMedi.SelectedIndex+1);
             sqlConnection.Open();

@@ -43,7 +43,6 @@
             this.cbCita = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.btnRetu = new System.Windows.Forms.Button();
-            this.btnEras = new System.Windows.Forms.Button();
             this.btnComm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -122,6 +121,7 @@
             this.dtpCita.Name = "dtpCita";
             this.dtpCita.Size = new System.Drawing.Size(200, 20);
             this.dtpCita.TabIndex = 23;
+            this.dtpCita.ValueChanged += new System.EventHandler(this.dtpCita_ValueChanged);
             // 
             // cbNoEn
             // 
@@ -167,22 +167,13 @@
             // 
             // btnRetu
             // 
-            this.btnRetu.Location = new System.Drawing.Point(421, 98);
+            this.btnRetu.Location = new System.Drawing.Point(421, 64);
             this.btnRetu.Name = "btnRetu";
             this.btnRetu.Size = new System.Drawing.Size(75, 23);
             this.btnRetu.TabIndex = 40;
             this.btnRetu.Text = "Regresar";
             this.btnRetu.UseVisualStyleBackColor = true;
             this.btnRetu.Click += new System.EventHandler(this.btnRetu_Click);
-            // 
-            // btnEras
-            // 
-            this.btnEras.Location = new System.Drawing.Point(421, 60);
-            this.btnEras.Name = "btnEras";
-            this.btnEras.Size = new System.Drawing.Size(75, 23);
-            this.btnEras.TabIndex = 39;
-            this.btnEras.Text = "Borrar todo";
-            this.btnEras.UseVisualStyleBackColor = true;
             // 
             // btnComm
             // 
@@ -200,7 +191,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(507, 348);
             this.Controls.Add(this.btnRetu);
-            this.Controls.Add(this.btnEras);
             this.Controls.Add(this.btnComm);
             this.Controls.Add(this.cbCita);
             this.Controls.Add(this.label7);
@@ -241,7 +231,6 @@
         private System.Windows.Forms.ComboBox cbCita;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnRetu;
-        private System.Windows.Forms.Button btnEras;
         private System.Windows.Forms.Button btnComm;
     }
 }

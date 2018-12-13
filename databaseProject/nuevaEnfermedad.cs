@@ -94,5 +94,10 @@ namespace databaseProject
         {
 
         }
+
+        private void tbSyst_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
