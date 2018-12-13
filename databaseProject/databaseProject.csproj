@@ -59,6 +59,30 @@
     <Compile Include="EdadPromedio.Designer.cs">
       <DependentUpon>EdadPromedio.cs</DependentUpon>
     </Compile>
+    <Compile Include="editar\Cita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editar\Cita.Designer.cs">
+      <DependentUpon>Cita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editar\Enfermedad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editar\Enfermedad.Designer.cs">
+      <DependentUpon>Enfermedad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editar\Medico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editar\Medico.Designer.cs">
+      <DependentUpon>Medico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editar\Paciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editar\Paciente.Designer.cs">
+      <DependentUpon>Paciente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +180,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EdadPromedio.resx">
       <DependentUpon>EdadPromedio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editar\Cita.resx">
+      <DependentUpon>Cita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editar\Enfermedad.resx">
+      <DependentUpon>Enfermedad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editar\Medico.resx">
+      <DependentUpon>Medico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editar\Paciente.resx">
+      <DependentUpon>Paciente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

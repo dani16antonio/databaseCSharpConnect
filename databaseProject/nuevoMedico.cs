@@ -68,12 +68,11 @@ namespace databaseProject
             string nombre = tbNam.Text;
             string apellido = tbLast.Text;
             string direccion = tbDire.Text;
-            DateTime nacimiento = dtpBorn.Value.Date;
-            nacimiento = DateTime.Parse(nacimiento.Year.ToString()+"-"+nacimiento.Month.ToString()+"-"+nacimiento.Day.ToString());
-            string query = "EXEC dbo.usp_Insert_Medico '" + nombre + "','" + apellido + "','" + nacimiento + "'," +universidad+",'"+direccion+"',"+contrato+"";
+            string query = "EXEC dbo.usp_Insert_Medico '" + nombre + "','" + apellido + "','" + dtpBorn.Value.ToString("yyyy-mm-dd") + "'," +universidad+",'"+direccion+"',"+contrato+"";
 
             sqlConnection.Open();
             SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
+            
             sqlCommand.ExecuteNonQuery();
             MessageBox.Show("Se guardaron los datos correctamente.",
                 "Datos guardados",

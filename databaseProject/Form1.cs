@@ -167,5 +167,35 @@ namespace databaseProject
             Citas Citas = new Citas(this);
             Citas.ShowDialog();
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnUPMe_Click(object sender, EventArgs e)
+        {
+            editar.Medico medico = new editar.Medico(this);
+            this.Hide();
+            medico.ShowDialog();
+        }
+
+        private void bntUpPa_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new editar.Paciente(this).ShowDialog();
+        }
+
+        private void btnUpEn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new editar.Enfermedad(this).ShowDialog();
+        }
+
+        private void btnUpCi_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new editar.Cita(this).ShowDialog();
+        }
     }
 }

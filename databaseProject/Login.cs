@@ -60,5 +60,12 @@ namespace databaseProject
             this.Hide();
             new Presentacion(this).ShowDialog();
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            tbUser.Text = "El gran usuario";
+            tbPass.Text = "La pequeña";
+            // TODO eraser those 2 line of code, please... do it...
+        }
     }
 }

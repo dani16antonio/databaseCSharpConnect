@@ -80,7 +80,7 @@
             // 
             // btnback
             // 
-            this.btnback.Location = new System.Drawing.Point(532, 248);
+            this.btnback.Location = new System.Drawing.Point(383, 41);
             this.btnback.Name = "btnback";
             this.btnback.Size = new System.Drawing.Size(75, 23);
             this.btnback.TabIndex = 8;
@@ -97,7 +97,7 @@
             // 
             // btnregistrarcita
             // 
-            this.btnregistrarcita.Location = new System.Drawing.Point(532, 12);
+            this.btnregistrarcita.Location = new System.Drawing.Point(383, 12);
             this.btnregistrarcita.Name = "btnregistrarcita";
             this.btnregistrarcita.Size = new System.Drawing.Size(75, 23);
             this.btnregistrarcita.TabIndex = 12;
@@ -173,7 +173,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(619, 283);
+            this.ClientSize = new System.Drawing.Size(475, 283);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
